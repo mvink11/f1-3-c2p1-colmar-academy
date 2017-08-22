@@ -1,0 +1,595 @@
+/*Universal styles*/
+
+html{
+  font-size: 16px;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  color: rgb(74,74,74);
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  margin: 0;
+}
+
+/*Header section*/
+
+.head-mobile{
+  display: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 50;
+  background-color:rgb(200,200,200);
+  opacity: 0.8;
+}
+
+.head-logo{
+  display: flex;
+  align-items: center;
+  line-height: 2rem;
+}
+
+.head-logo img:hover{
+  height: 3rem;
+}
+
+.head-navigation{
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+}
+
+nav span{
+  transition: font-size 200ms ease-in;
+}
+
+nav span:hover{
+  font-size: 1.5rem;
+}
+
+span{
+  line-height: 1.5rem;
+}
+
+.head-navigation a{
+  padding: 0 0.3rem;
+  font-size: 0.875rem;
+  color: black;
+  text-decoration: none;
+}
+
+.logo{
+  margin-left: 1.5rem;
+}
+
+.colmar{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgb(0,0,0);
+}
+
+.academy{
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(0,0,0);
+}
+
+/*Jumbotron section*/
+
+.jumbotron{
+  display: flex;
+  width: 100%;
+  background-color: rgba(220, 220, 220,0.5);
+  padding: 6rem 0 2rem 1.5rem;
+}
+
+.jumbotron-image{
+  display: flex;
+  width: 56%;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35rem;
+}
+
+.jumbotron-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+  width: 40%;
+}
+
+.jumbotron-text-container{
+  width: 80%;
+  align-items: center;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+button{
+  background-color: rgb(200,200,200);
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 50px;
+  transition: all 300ms ease-in;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
+}
+
+button:hover{
+  background-color: rgb(100,100,100);
+  color: white;
+}
+
+.jumbotron-text-container a:hover{
+  color: white;
+}
+
+/*Campus info section*/
+
+.campus{
+  display: flex;
+  width: 100%;
+
+}
+
+.campus-main{
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+
+.campus-main-img{
+  background-image: url(../images/information-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 26rem;
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.campus-main-text{
+  width: 90%;
+  margin-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.campus-menu{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid rgb(50,50,50);
+}
+
+h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h6{
+  margin-top: 2rem;
+  font-size: 0.75rem;
+}
+
+.menu-1-orientation,
+.menu-2-our-campus,
+.menu-3-guest{
+  width: 100%;
+  height: auto;
+}
+
+img.mobile-img{
+  display: none;
+}
+
+.campus-menu-1,
+.campus-menu-2,
+.campus-menu-3{
+  display: flex;
+  height: auto;
+  padding: 1rem 1rem;
+  background-color: white;
+}
+
+.campus-menu-3{
+  border-bottom: 1px solid rgb(75,75,75);
+}
+
+.campus-menu-1-img,
+.campus-menu-2-img,
+.campus-menu-3-img{
+  width: 35%;
+}
+
+.campus-menu-1-text,
+.campus-menu-2-text,
+.campus-menu-3-text{
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.campus-menu-1-text a,
+.campus-menu-2-text a,
+.campus-menu-3-text a{
+  color: rgb(75,75,75);
+  transition: all 300ms ease-in;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.campus-menu span,
+.courses span{
+  margin-top: 0.5rem;
+}
+
+.campus-menu a{
+  margin-top: 0.5rem;
+  color: ;
+  text-decoration: none;
+}
+
+.campus-main span{
+  margin-top: -0.5rem;
+}
+
+/*Campus menu hover sections*/
+.campus-menu-1:hover,
+.campus-menu-2:hover,
+.campus-menu-3:hover{
+  background-color: rgba(220,220,220,0.5);
+  outline: 1px solid rgb(75,75,75);
+}
+
+.campus-menu-1-text a:hover,
+.campus-menu-2-text a:hover,
+.campus-menu-3-text a:hover{
+  font-size: 1.2rem;
+  color: rgb(250,100,75);
+}
+
+/*Courses section*/
+
+.courses{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(220,220,220,0.5);
+}
+
+.courses-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 4.5rem;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.course-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+}
+
+.courses-block{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.courses img{
+  height: auto;
+  max-width: 100%;
+}
+
+.courses-text{
+  display: flex;
+  flex-direction: column;
+  background-color: ;
+  padding: 1rem 1rem;
+}
+
+
+/*Thesis section*/
+
+.thesis{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.thesis-video{
+  display: flex;
+  width: 55%;
+  flex-direction: column;
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.thesis-video-vid{
+  max-width: 100%;
+}
+
+.thesis-video-text{
+  padding: 1.5rem 1.5rem 2rem 0;
+}
+
+.thesis h3{
+  margin-bottom: 0.5rem;
+}
+
+.thesis-menu{
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  margin: 0;
+}
+
+.thesis-menu-1,
+.thesis-menu-2{
+  display: flex;
+  align-items: center;
+}
+
+.thesis-menu-1:hover,
+.thesis-menu-2:hover{
+  background-color: rgba(220,220,220,0.5);
+  outline: 1px solid rgb(75,75,75);
+}
+
+.thesis-menu-1-img,
+.thesis-menu-2-img{
+  width: 35%;
+  padding: 1rem 1rem;
+}
+
+.thesis img{
+  max-width: 100%;
+}
+
+.thesis-menu-1-text,
+.thesis-menu-2-text{
+  width: 55%;
+}
+
+/*Footer*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  border-top: 1px solid rgba(240,240,240,0.5);
+  background-color: rgba(240,240,240,0.5);
+}
+
+footer a,
+footer span{
+  text-decoration: none;
+  color: rgb(75,75,75);
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+footer a:hover{
+  color: rgb(250,100,75);
+  font-size: 1rem;
+}
+
+/*Media Queris/Mobile display section*/
+
+@media only screen and (max-width: 620px){
+  html{
+    padding: 0;
+  }
+
+/*Header*/
+
+  .head-logo,
+  .head-navigation{
+    display: none;
+  }
+
+  .head-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+  }
+
+
+  .logo{
+    margin: 0;
+  }
+
+/*Header Hover*/
+
+  .head-mobile img:active{
+    height: 3rem;
+  }
+
+  /*Jumbotron*/
+
+  .jumbotron,
+  .jumbotron-image,
+  .jumbotron-text{
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .jumbotron-text-container{
+    width: 90%;
+    margin: 0 1.5rem;
+  }
+
+  .jumbotron-text{
+    margin: 2rem 0;
+    padding: 0;
+  }
+
+  .jumbotron-image{
+    width: 100%;
+    background-size: cover;
+    height: 21rem;
+    margin: 0;
+    margin-top: 4rem;
+  }
+
+  /*Campus Info section*/
+
+  .campus-main{
+    display: none;
+  }
+
+  .campus-menu{
+    width: 100%;
+  }
+
+  .campus-menu-1,
+  .campus-menu-2,
+  .campus-menu-3{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .menu-1-orientation,
+  .menu-2-our-campus,
+  .menu-3-guest{
+    display: none;
+  }
+
+  img.mobile-img{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .campus{
+    margin-bottom: 1.5rem;
+  }
+
+  .campus-menu-1-img,
+  .campus-menu-1-text,
+  .campus-menu-2-img,
+  .campus-menu-2-text,
+  .campus-menu-3-img,
+  .campus-menu-3-text{
+    width: 100%;
+  }
+
+  .campus-menu-1-text,
+  .campus-menu-2-text,
+  .campus-menu-3-text{
+    margin-top: 1rem;
+  }
+
+  /* Courses */
+  h2{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .courses-img,
+  .courses-text span{
+    display: none;
+  }
+
+  .courses-text{
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .courses-block{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    transition: all 200ms ease-in;
+  }
+
+  .courses-block:active{
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(75,75,75);
+  }
+
+  .courses-container{
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+/* Thesis */
+  .thesis-menu{
+    display: none;
+  }
+
+  .thesis-video{
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .thesis-video-text{
+    display: none;
+  }
+
+  .thesis-video-vid{
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-links{
+    display: none;
+  }
+
+  footer{
+    display: flex;
+    padding: 1rem 1rem;
+    border-top: 1px solid rgba();
+    background-color: rgba();
+  }
+
+}
